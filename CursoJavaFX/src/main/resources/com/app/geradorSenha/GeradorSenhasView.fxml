@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane
+        maxHeight="-Infinity"
+        maxWidth="-Infinity"
+        minHeight="-Infinity"
+        minWidth="-Infinity"
+        prefHeight="500.0"
+        prefWidth="443.0"
+        style="-fx-background-color: #2b2c30;"
+        xmlns="http://javafx.com/javafx/21"
+        xmlns:fx="http://javafx.com/fxml/1"
+        fx:controller="com.app.geradorSenha.controller.GeradorSenhasController">
+
+    <children>
+
+        <Pane layoutY="8.0"
+              prefHeight="500.0"
+              prefWidth="443.0">
+
+            <children>
+
+                <TextField
+                        fx:id="textSenhaGerada"
+                        layoutX="17.0"
+                        layoutY="2.0"
+                        prefHeight="33.0"
+                        prefWidth="412.0">
+
+                    <font>
+                        <Font name="SansSerif Regular" size="18.0"/>
+                    </font>
+
+                </TextField>
+
+                <VBox
+                        layoutX="2.0"
+                        layoutY="47.0"
+                        prefHeight="270.0"
+                        prefWidth="443.0">
+
+                    <children>
+
+                        <CheckBox
+                                fx:id="checkLetrasMaiusculas"
+                                mnemonicParsing="false"
+                                text="Letras maiúsculas"
+                                textFill="WHITE">
+
+                            <font>
+                                <Font size="25.0"/>
+                            </font>
+
+                            <padding>
+                                <Insets left="10.0" top="12.0"/>
+                            </padding>
+
+                        </CheckBox>
+
+                        <CheckBox
+                                fx:id="checkLetrasMinusculas"
+                                mnemonicParsing="false"
+                                text="Letras minúsculas"
+                                textFill="WHITE">
+
+                            <font>
+                                <Font size="25.0"/>
+                            </font>
+
+                            <padding>
+                                <Insets left="10.0" top="12.0"/>
+                            </padding>
+
+                        </CheckBox>
+
+                        <CheckBox
+                                fx:id="checkIncluNumeros"
+                                mnemonicParsing="false"
+                                text="Incluir números"
+                                textFill="WHITE">
+
+                            <font>
+                                <Font size="25.0"/>
+                            </font>
+
+                            <padding>
+                                <Insets left="10.0" top="12.0"/>
+                            </padding>
+
+                        </CheckBox>
+
+                        <CheckBox
+                                fx:id="checkIncluSimbolos"
+                                mnemonicParsing="false"
+                                text="Incluir símbolos (@#$%...)"
+                                textFill="WHITE">
+
+                            <font>
+                                <Font size="25.0"/>
+                            </font>
+
+                            <padding>
+                                <Insets left="10.0" top="12.0"/>
+                            </padding>
+
+                        </CheckBox>
+
+                    </children>
+
+                </VBox>
+
+                <VBox
+                        layoutX="2.0"
+                        layoutY="246.0"
+                        prefHeight="142.0"
+                        prefWidth="443.0">
+
+                    <children>
+
+                        <Button
+                                fx:id="btnGerarSenha"
+                                mnemonicParsing="false"
+                                onAction="#gerarSenha"
+                                prefHeight="46.0"
+                                prefWidth="343.0"
+                                text="GERAR SENHA">
+
+                            <VBox.margin>
+                                <Insets left="50.0" top="15.0"/>
+                            </VBox.margin>
+
+                            <font>
+                                <Font name="SansSerif Bold" size="25.0"/>
+                            </font>
+
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+
+                        </Button>
+
+                        <Button
+                                fx:id="btnCopiaSenha"
+                                mnemonicParsing="false"
+                                onAction="#copiarSenha"
+                                prefHeight="46.0"
+                                prefWidth="343.0"
+                                text="COPIAR SENHA">
+
+                            <VBox.margin>
+                                <Insets left="50.0" top="15.0"/>
+                            </VBox.margin>
+
+                            <cursor>
+                                <Cursor fx:constant="HAND"/>
+                            </cursor>
+
+                            <font>
+                                <Font name="SansSerif Bold" size="25.0"/>
+                            </font>
+
+                        </Button>
+
+                    </children>
+
+                </VBox>
+
+            </children>
+
+        </Pane>
+
+    </children>
+
+</AnchorPane>
