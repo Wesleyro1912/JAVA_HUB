@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.app.jokenpo.controller.jokenpoController">
+
+   <top>
+
+      <Label text="Jogo Pedra, Papel e Tesoura em JavaFX" BorderPane.alignment="CENTER">
+
+         <font>
+            <Font name="System Bold" size="60.0" />
+         </font>
+
+      </Label>
+
+   </top>
+
+   <left>
+
+      <Pane prefHeight="632.0" prefWidth="451.0" BorderPane.alignment="CENTER">
+
+         <children>
+
+            <Label layoutX="130.0" layoutY="285.0" text="🤚">
+
+               <font>
+                  <Font size="200.0" />
+               </font>
+
+            </Label>
+
+            <Label layoutX="21.0" text="✌">
+
+               <font>
+                  <Font size="200.0" />
+               </font>
+
+            </Label>
+
+            <Label layoutX="266.0" text="✊">
+
+               <font>
+                  <Font size="200.0" />
+               </font>
+
+            </Label>
+
+            <CheckBox fx:id="checkTesoura" layoutX="36.0" layoutY="230.0" mnemonicParsing="false" text="Tesoura">
+
+               <font>
+                  <Font name="SansSerif Bold" size="30.0" />
+               </font>
+
+            </CheckBox>
+
+            <CheckBox fx:id="checkPapel" layoutX="158.0" layoutY="500.0" mnemonicParsing="false" text="Papel">
+
+               <font>
+                  <Font name="SansSerif Bold" size="30.0" />
+               </font>
+
+            </CheckBox>
+
+            <CheckBox fx:id="checkPedra" layoutX="281.0" layoutY="240.0" mnemonicParsing="false" text="Pedra">
+
+               <font>
+                  <Font name="SansSerif Bold" size="30.0" />
+               </font>
+
+            </CheckBox>
+
+         </children>
+
+      </Pane>
+
+   </left>
+
+   <center>
+
+      <Pane prefHeight="632.0" prefWidth="453.0" BorderPane.alignment="CENTER">
+
+         <children>
+
+            <Button layoutX="88.0" layoutY="208.0" mnemonicParsing="false" onAction="#jokenpo" text="Jogar">
+
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+
+            </Button>
+
+            <Button layoutX="75.0" layoutY="316.0" mnemonicParsing="false" onAction="#setBtnResetar" text="Resetar">
+
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+
+            </Button>
+
+            <Label fx:id="labPlacar" layoutX="-129.0" layoutY="483.0" text="Jogador 00 x Computador 00">
+
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+
+            </Label>
+
+         </children>
+
+      </Pane>
+
+   </center>
+
+   <right>
+
+      <Pane prefHeight="632.0" prefWidth="402.0" BorderPane.alignment="CENTER">
+
+         <children>
+
+            <Button layoutX="149.0" layoutY="494.0" mnemonicParsing="false" onAction="#setBtnResetarPlacar" text="Resetar Placar">
+
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+
+            </Button>
+
+            <ImageView fitHeight="220.0" fitWidth="382.0" layoutX="10.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+
+               <image>
+                  <Image url="@../../../../../../../../../../Users/WESLEY/Downloads/Blue%20Illustrative%20Computer%20Parts%20Quiz%20Presentation.png" />
+               </image>
+
+            </ImageView>
+
+            <Label fx:id="labPlaca1" layoutX="59.0" layoutY="87.0" text="Computador:">
+
+               <font>
+                  <Font name="System Bold" size="45.0" />
+               </font>
+
+            </Label>
+
+            <Label fx:id="labTesoura" layoutX="121.0" layoutY="149.0" prefHeight="190.0" prefWidth="207.0" text="✌" visible="false">
+
+               <font>
+                  <Font size="150.0" />
+               </font>
+
+            </Label>
+
+            <Label fx:id="labPedra" layoutX="122.0" layoutY="154.0" text="✊" visible="false">
+
+               <font>
+                  <Font size="150.0" />
+               </font>
+
+            </Label>
+
+            <Label fx:id="labPapel" layoutX="125.0" layoutY="187.0" text="🤚" visible="false">
+
+               <font>
+                  <Font size="130.0" />
+               </font>
+
+            </Label>
+
+         </children>
+
+      </Pane>
+
+   </right>
+
+</BorderPane>
